@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="search__page_main">
+        <!-- main section -->
+        <section class="section">
+            <div class="section__head">
+                <h1 class="search__section_heading">Top Chicago Wedding Hotels</h1>
+                <h3 class="search__section_subheading">15 results near Chicago, IL, USA</h3>
+            </div>
+
+
+            <div class="filters__bar container-fluid mb-4">
+                <form id="search__filter_form" class="search__filter_form row">
+                    <div class="col-md-4 col-sm-12 px-md-2 p-0 m-0 ">
+                        <input class="search__filter_input form-control" type="text" name="location"
+                            placeholder="Enter Location">
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-3 px-md-2 p-0 m-0 ">
+                        <select class="search__filter_input form-control form-select" name="price_range">
+                            <option value="">Price Range</option>
+                            <option value="low">$0 - $500</option>
+                            <option value="medium">$501 - $1000</option>
+                            <option value="high">$1001 - $2000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-3 px-md-2 p-0 m-0 ">
+                        <select class="search__filter_input form-control form-select" name="price_range">
+                            <option value="">location</option>
+                            <option value="low">$0 - $500</option>
+                            <option value="medium">$501 - $1000</option>
+                            <option value="high">$1001 - $2000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-3 px-md-2 p-0 m-0">
+                        <select class="search__filter_input form-control form-select" name="price_range">
+                            <option value="">Category</option>
+                            <option value="low">$0 - $500</option>
+                            <option value="medium">$501 - $1000</option>
+                            <option value="high">$1001 - $2000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-3 px-md-2 p-0 m-0">
+                        <select class="search__filter_input form-control form-select" name="price_range">
+                            <option value="">Event</option>
+                            <option value="low">$0 - $500</option>
+                            <option value="medium">$501 - $1000</option>
+                            <option value="high">$1001 - $2000</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="section__result_area container-fluid">
+
+                <div class="row">
+                    <!-- ----- Map side ------ -->
+                    <div class="col-md-4 col-12 order-md-0 order-1 search__map_side">
+                        <div class="result__map_wrapper">
+                            <div class="result__map">
+                                <iframe class="map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6799.871323127358!2d74.33259971463188!3d31.553380268747894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904c8606da7e9%3A0xd70a28b88f7720d7!2sPearl%20Continental%20Hotel%2C%20Lahore!5e0!3m2!1sen!2s!4v1726202196557!5m2!1sen!2s"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="result_description mt-4">
+                            <p>Choosing your wedding venue will be one of the most important steps in the planning
+                                process. So much goes into finding the perfect hotel in Chicago. You’ll want to consider
+                                everything from the aesthetics of the space to any in-house amenities and services.
+                                Luckily, PartySlate makes it easy with our Find Venues page. Use the filters to narrow
+                                your search — taking into account everything from your guest count to specific catering
+                                preferences. Once you’ve set your filters, scroll down to search our curated list. Look
+                                for the “featured” tag for PartySlate’s top recommendations. With PartySlate, finding
+                                your ideal Chicago hotel has never been easier.</p>
+                        </div>
+                    </div>
+                    <!-- ----- cards Area ------ -->
+                    <div class="col-md-8 col-12 order-md-1 order-0 search__result_side">
+
+
+                        <!-- ==== Single Card ==== -->
+                        <div class="event__search_card container-fluid">
+                            <div class="card__featured">Featured</div>
+                            <button class="card__like_btn btn"><i class="fa-solid fa-heart"></i></button>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- ---- image slider ---- -->
+                                    <div class="card__image_slider">
+                                        <div class="swiper card__images_swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-1.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-2.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-3.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-4.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next card__slide_arrow card__slide_arrow-next">
+                                            </div>
+                                            <div class="swiper-button-prev card__slide_arrow card__slide_arrow-prev">
+                                            </div>
+                                            <div class="swiper-pagination card__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card__data_wrapper">
+                                        <div class="card__header">
+                                            <a href="#" class="card__title">
+                                                The Westin O'Hare
+                                            </a>
+                                            <p class="card__location">6100 N River Rd, Rosemont, IL 60018, USA</p>
+                                        </div>
+                                        <div class="card__properties">
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                        </div>
+                                        <div class="card__description">
+                                            Feel your best on your special day and allow our expert staff to ensure each
+                                            detail comes to life flawlessly.
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price_wrapper">
+                                                <p class="card__price">Est. $163/guest</p>
+                                                <p class="card__price">$10,000 min</p>
+                                            </div>
+                                            <div class="footer__btn_wrapper">
+                                                <p class="card__response">Avg response time 12-24 hrs</p>
+                                                <button class="card__btn btn">Request Pricing</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ==== Single Card ==== -->
+                        <div class="event__search_card container-fluid">
+                            <div class="card__featured">Featured</div>
+                            <button class="card__like_btn btn"><i class="fa-solid fa-heart opacity-25"></i></button>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- ---- image slider ---- -->
+                                    <div class="card__image_slider">
+                                        <div class="swiper card__images_swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-2.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next card__slide_arrow card__slide_arrow-next">
+                                            </div>
+                                            <div class="swiper-button-prev card__slide_arrow card__slide_arrow-prev">
+                                            </div>
+                                            <div class="swiper-pagination card__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card__data_wrapper">
+                                        <div class="card__header">
+                                            <a href="#" class="card__title">
+                                                The Westin O'Hare
+                                            </a>
+                                            <p class="card__location">6100 N River Rd, Rosemont, IL 60018, USA</p>
+                                        </div>
+                                        <div class="card__properties">
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                        </div>
+                                        <div class="card__description">
+                                            Feel your best on your special day and allow our expert staff to ensure each
+                                            detail comes to life flawlessly.
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price_wrapper">
+                                                <p class="card__price">Est. $163/guest</p>
+                                                <p class="card__price">$10,000 min</p>
+                                            </div>
+                                            <div class="footer__btn_wrapper">
+                                                <p class="card__response">Avg response time 12-24 hrs</p>
+                                                <button class="card__btn btn">Request Pricing</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ==== Single Card ==== -->
+                        <div class="event__search_card container-fluid">
+                            <div class="card__featured">Featured</div>
+                            <button class="card__like_btn btn"><i class="fa-solid fa-heart opacity-25"></i></button>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- ---- image slider ---- -->
+                                    <div class="card__image_slider">
+                                        <div class="swiper card__images_swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-3.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-2.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-3.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-4.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next card__slide_arrow card__slide_arrow-next">
+                                            </div>
+                                            <div class="swiper-button-prev card__slide_arrow card__slide_arrow-prev">
+                                            </div>
+                                            <div class="swiper-pagination card__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card__data_wrapper">
+                                        <div class="card__header">
+                                            <a href="#" class="card__title">
+                                                The Westin O'Hare
+                                            </a>
+                                            <p class="card__location">6100 N River Rd, Rosemont, IL 60018, USA</p>
+                                        </div>
+                                        <div class="card__properties">
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                        </div>
+                                        <div class="card__description">
+                                            Feel your best on your special day and allow our expert staff to ensure each
+                                            detail comes to life flawlessly.
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price_wrapper">
+                                                <p class="card__price">Est. $163/guest</p>
+                                                <p class="card__price">$10,000 min</p>
+                                            </div>
+                                            <div class="footer__btn_wrapper">
+                                                <p class="card__response">Avg response time 12-24 hrs</p>
+                                                <button class="card__btn btn">Request Pricing</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ==== Single Card ==== -->
+                        <div class="event__search_card container-fluid">
+                            <div class="card__featured">Featured</div>
+                            <button class="card__like_btn btn"><i class="fa-solid fa-heart opacity-25"></i></button>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- ---- image slider ---- -->
+                                    <div class="card__image_slider">
+                                        <div class="swiper card__images_swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-4.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-2.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-3.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-4.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next card__slide_arrow card__slide_arrow-next">
+                                            </div>
+                                            <div class="swiper-button-prev card__slide_arrow card__slide_arrow-prev">
+                                            </div>
+                                            <div class="swiper-pagination card__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card__data_wrapper">
+                                        <div class="card__header">
+                                            <a href="#" class="card__title">
+                                                The Westin O'Hare
+                                            </a>
+                                            <p class="card__location">6100 N River Rd, Rosemont, IL 60018, USA</p>
+                                        </div>
+                                        <div class="card__properties">
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                        </div>
+                                        <div class="card__description">
+                                            Feel your best on your special day and allow our expert staff to ensure each
+                                            detail comes to life flawlessly.
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price_wrapper">
+                                                <p class="card__price">Est. $163/guest</p>
+                                                <p class="card__price">$10,000 min</p>
+                                            </div>
+                                            <div class="footer__btn_wrapper">
+                                                <p class="card__response">Avg response time 12-24 hrs</p>
+                                                <button class="card__btn btn">Request Pricing</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ==== Single Card ==== -->
+                        <div class="event__search_card container-fluid">
+                            <div class="card__featured">Featured</div>
+                            <button class="card__like_btn btn"><i class="fa-solid fa-heart opacity-25"></i></button>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- ---- image slider ---- -->
+                                    <div class="card__image_slider">
+                                        <div class="swiper card__images_swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-1.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-2.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-3.png"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide card__img_slide">
+                                                    <a href="#"><img class="img-fluid card__img" src="images/img-4.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next card__slide_arrow card__slide_arrow-next">
+                                            </div>
+                                            <div class="swiper-button-prev card__slide_arrow card__slide_arrow-prev">
+                                            </div>
+                                            <div class="swiper-pagination card__pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card__data_wrapper">
+                                        <div class="card__header">
+                                            <a href="#" class="card__title">
+                                                The Westin O'Hare
+                                            </a>
+                                            <p class="card__location">6100 N River Rd, Rosemont, IL 60018, USA</p>
+                                        </div>
+                                        <div class="card__properties">
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                            <a href="#" class="card__property">8 Wedding Albums</a>
+                                        </div>
+                                        <div class="card__description">
+                                            Feel your best on your special day and allow our expert staff to ensure each
+                                            detail comes to life flawlessly.
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price_wrapper">
+                                                <p class="card__price">Est. $163/guest</p>
+                                                <p class="card__price">$10,000 min</p>
+                                            </div>
+                                            <div class="footer__btn_wrapper">
+                                                <p class="card__response">Avg response time 12-24 hrs</p>
+                                                <button class="card__btn btn">Request Pricing</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
