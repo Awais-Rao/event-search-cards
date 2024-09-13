@@ -126,14 +126,14 @@
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
 }
 
-.card__featured {
+.card__featu#f91942 {
   position: absolute;
   left: 0;
   top: 15px;
   font-size: 16px;
   font-family: georgia, "Times New Roman", times, serif;
   font-weight: 100;
-  background-color: red;
+  background-color: #f91942;
   color: #fff;
   padding: 2px 8px;
   z-index: 5;
@@ -151,7 +151,7 @@
 
 .card__like_btn i {
   font-size: 16px;
-  color: red;
+  color: #f91942;
 }
 
 .card__image_slider {
@@ -187,7 +187,7 @@
   top: 100%;
   height: 16px;
   z-index: 9999;
-  color: red;
+  color: #f91942;
 }
 
 .swiper-button-next {
@@ -208,7 +208,7 @@
 }
 
 .card__pagination .swiper-pagination-bullet-active {
-  background: red !important;
+  background: #f91942 !important;
 }
 
 .card__data_wrapper {
@@ -264,7 +264,7 @@
   color: #725d3b;
 
   background-color: rgb(255, 220, 220);
-  color: red;
+  color: #f91942;
 }
 
 .card__description {
@@ -315,8 +315,8 @@
 }
 
 .card__btn {
-  border: 1px solid red;
-  background-color: red !important;
+  border: 1px solid #f91942;
+  background-color: #f91942 !important;
   color: #fff !important;
   font-weight: 600;
   font-size: 14px;
@@ -331,7 +331,7 @@
   .section {
     padding: 2rem 1.5rem;
   }
-  .card__featured{
+  .card__featu#f91942{
     font-size: 12px;
   }
   .card__btn{
@@ -344,7 +344,7 @@
   .section {
     padding: 2rem 3rem;
   }
-  .card__featured{
+  .card__featu#f91942{
     font-size: 14px;
   }
   .card__btn{
