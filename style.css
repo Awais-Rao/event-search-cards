@@ -126,7 +126,7 @@
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
 }
 
-.card__featu#f91942 {
+.card__featured {
   position: absolute;
   left: 0;
   top: 15px;
@@ -331,7 +331,7 @@
   .section {
     padding: 2rem 1.5rem;
   }
-  .card__featu#f91942{
+  .card__featured{
     font-size: 12px;
   }
   .card__btn{
@@ -344,7 +344,7 @@
   .section {
     padding: 2rem 3rem;
   }
-  .card__featu#f91942{
+  .card__featured{
     font-size: 14px;
   }
   .card__btn{
