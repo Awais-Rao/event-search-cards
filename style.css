@@ -318,7 +318,8 @@
   border: 1px solid red;
   background-color: red !important;
   color: #fff !important;
-  font-weight: 650;
+  font-weight: 600;
+  font-size: 14px;
   border-radius: 4px !important;
   padding: 10px 15px !important;
   display: inline-block;
