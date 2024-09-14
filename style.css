@@ -147,12 +147,28 @@
   padding: 0;
   border: none;
   z-index: 2;
+  background: #eeeeee;
+  height: 40px;
+  width: 40px;
+  border-radius: 500px;
+  transition: all 0.3s ease-in-out;
 }
 
 .card__like_btn i {
   font-size: 16px;
-  color: #f91942;
+  color: #bcbcbc;
+  transition: all 0.3s ease-in-out;
 }
+
+.card__like_btn.liked,
+.card__like_btn:hover{
+  background: #f91942;
+}
+.card__like_btn.liked i,
+.card__like_btn:hover i {
+  color: white;
+}
+
 
 .card__image_slider {
   position: relative;
